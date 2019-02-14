@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/layer"
+    android:layout_width="@dimen/dp_151"
+    android:layout_height="@dimen/dp_174"
+    android:layout_marginRight="@dimen/dp_10"
+    android:layout_marginBottom="@dimen/dp_10">
+<!--首页子布局，品质生活-->
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/pzsh_image"
+        android:layout_width="@dimen/dp_131"
+        android:layout_height="@dimen/dp_102"
+        android:layout_margin="@dimen/dp_10"
+        fresco:placeholderImage="@mipmap/loading"/>
+    <TextView
+        android:id="@+id/pzsh_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:textColor="#666666"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/sp_12"
+        android:text="HelloWord"/>
+    <TextView
+        android:id="@+id/pzsh_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:textColor="#ff0000"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/sp_14"
+        android:text="HelloWord"/>
+</LinearLayout>

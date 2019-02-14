@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/layer"
+    android:layout_width="@dimen/dp_312"
+    android:layout_height="@dimen/dp_118"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:orientation="horizontal">
+    <!--首页子布局魔力时尚-->
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/mlss_image"
+        android:layout_width="@dimen/dp_85"
+        android:layout_height="@dimen/dp_98"
+        android:layout_margin="@dimen/dp_10"
+        fresco:placeholderImage="@mipmap/loading"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_10">
+        <TextView
+            android:id="@+id/mlss_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HelloWord"
+            android:textSize="@dimen/sp_12"
+           android:maxLines="3"
+            android:textColor="#666666"/>
+        <TextView
+            android:id="@+id/mlss_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="HelloWord"
+            android:textSize="@dimen/sp_14"
+            android:textColor="#ff0000"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".Commodity_DetailsActivity">
+
+    <!--商品详情页面Activity-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginLeft="@dimen/dp_74"
+            android:layout_marginRight="@dimen/dp_74"
+            app:tabTextColor="#666666">
+
+        </android.support.design.widget.TabLayout>
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginRight="@dimen/dp_24"
+            android:scrollbars="none">
+
+        </ListView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/details_relative_addshoppingcar"
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/buylayble"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="@dimen/dp_80"
+        android:padding="@dimen/dp_5">
+        <ImageView
+            android:id="@+id/btn_cart"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:src="@mipmap/common_btn_add_n" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/details_relative_pay"
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="@dimen/dp_40"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:background="@drawable/buylayble"
+        android:padding="@dimen/dp_5">
+        <ImageView
+            android:id="@+id/btn_buy"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:src="@mipmap/common_btn_buy_n" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_30"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:background="#ffffff"
+            android:src="@mipmap/common_nav_btn_back_n"/>
+    </LinearLayout>
+</FrameLayout>

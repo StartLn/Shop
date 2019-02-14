@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="@dimen/dp_105"
+    android:layout_height="@dimen/dp_166"
+    android:background="@drawable/layer">
+    <!--首页子布局，热销商品-->
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/rxxp_image"
+        android:layout_width="@dimen/dp_85"
+        android:layout_height="@dimen/dp_99"
+        android:layout_margin="@dimen/dp_10"
+        fresco:placeholderImage="@mipmap/loading"/>
+    <TextView
+        android:id="@+id/rxxp_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:singleLine="true"
+        android:textSize="@dimen/sp_12"
+        android:textColor="#666666"
+        android:text="HelloWord"/>
+    <TextView
+        android:id="@+id/rxxp_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:textSize="@dimen/sp_14"
+        android:textColor="#ff0000"
+        android:text="HelloWord"/>
+</LinearLayout>
